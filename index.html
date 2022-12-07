@@ -58,7 +58,7 @@
       <section class="solution">
         <div class="container">
           <h1 class="solution-text">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button-studio" type="button">Замовити послугу</button>
+          <button class="button-studio" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="section">
@@ -116,9 +116,24 @@
         <div class="container">
           <h2 class="text-section">Чим ми займаємося</h2>
           <ul class="about-pictures">
-            <li><img src="./images/box-1.jpg" alt="верстка" width="370" height="294" /></li>
-            <li><img src="./images/box-2.jpg" alt="оформлення" width="370" height="294" /></li>
-            <li><img src="./images/box-3.jpg" alt="результат" width="370" height="294" /></li>
+            <li class="label">
+              <img src="./images/box-1.jpg" alt="верстка" width="370" height="294" />
+              <div class="label-studio">
+                <h3 class="label-studio-text">Десктопні додатки</h3>
+              </div>
+            </li>
+            <li class="label">
+              <img src="./images/box-2.jpg" alt="оформлення" width="370" height="294" />
+              <div class="label-studio">
+                <h3 class="label-studio-text">Мобільні додатки</h3>
+              </div>
+            </li>
+            <li class="label">
+              <img src="./images/box-3.jpg" alt="результат" width="370" height="294" />
+              <div class="label-studio">
+                <h3 class="label-studio-text">Дизайнерські рішення</h3>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -362,6 +377,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal" data-modal-close>
+          <svg width="30" height="30" class="modal-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
