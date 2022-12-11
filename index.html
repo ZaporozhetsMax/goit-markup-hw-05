@@ -375,6 +375,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-mailing">
+          <p class="footer-mailing-text">Підпишіться на розсилку</p>
+
+          <label class="mailing-text">
+            <input class="input-text" name="Email" type="Email" placeholder="E-mail"
+          /></label>
+
+          <button type="submit" class="footer-mailing-btn">
+            Підписатися
+            <svg width="24" height="24" class="footer-icon-send">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -384,6 +398,22 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="form-view" action="">
+          <p class="modal-head-text">Залиште свої дані, ми Вам передзвонемо</p>
+          <label class="label-text">Ім'я<input class="modal-input-text" type="text" /></label>
+          <label class="label-text">Телефон<input class="modal-input-text" type="tel" /></label>
+          <label class="label-text">Пошта<input class="modal-input-text" type="mail" /></label>
+          <label class="label-text"
+            >Коментар<textarea
+              class="modal-input-text"
+              placeholder="Введіть текст"
+              name=""
+              id=""
+            ></textarea>
+          </label>
+        </form>
+        <p class="modal-agree">Погоджуюся з розсилкою та приймаю Умови договору</p>
+        <button class="modal-agree-btn" type="submit">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
